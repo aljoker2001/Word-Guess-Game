@@ -1,0 +1,19 @@
+body {
+    background-color: black;
+}
+
+h1, h2 {
+    font-family: 'Eagle Lake', cursive;
+    color: white;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+}
+
+h1 {
+    font-size: 5em;
+}
+
+h2 {
+    font-size: 4em;
+}
