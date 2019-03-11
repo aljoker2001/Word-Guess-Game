@@ -1,6 +1,7 @@
 body {
     margin: auto;
     width: 100%;
+    background: cover;
 }
 
 header {
@@ -25,21 +26,50 @@ h2 {
     padding: 0 0 20px 0;
 }
 
+h3 {
+    font-family: 'Eagle Lake', cursive;
+    text-align: center;
+    color: white;
+    -webkit-text-stroke: 1px black;
+    font-size: 36px;
+}
+
 .container {
     width: 100%;
     height: auto;
 }
 
-.word {
-
+.row {
+    width: 100%;
+    display: flex;
+    justify-content: center;
 }
 
-#guess {
-    font-size: 24px;
+.word {
+    font-size: 36px;
+    color: white;
+    font-weight: bolder;
+    -webkit-text-stroke: 1px black;
+    width: auto;
+    text-align: center;
+    letter-spacing: .5em;
+    margin: 30px;
+    background-color: #333333;
+    opacity: .5;
+    padding: 5px;
+    border: 2px solid black;
+}
+
+.stats {
+    width: 33.33%;
+}
+
+#guess, #remaining {
+    font-size: 36px;
     color: white;
     -webkit-text-stroke: 1px black;
     font-weight: bold;
-    width: 33%;
     margin: 20px;
     text-align: center;
+    font-family: 'Eagle Lake', cursive;
 }

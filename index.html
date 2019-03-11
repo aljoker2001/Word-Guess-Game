@@ -6,8 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>LOTR Word Guessing Game</title>
-    <link rel="icon" type="image/png" href="assets/images/ring.png"
-    <link rel="stylesheet" type="text/css" href="assets/css/reset.css">
+    <link rel="icon" type="image/png" href="assets/images/ring.png" <link rel="stylesheet" type="text/css"
+        href="assets/css/reset.css">
     <link href="https://fonts.googleapis.com/css?family=Eagle+Lake" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="assets/css/style.css">
 </head>
@@ -22,12 +22,21 @@
             <div class="word"></div>
         </div>
         <div class="row">
-            <div id="guess"></div>
-            <div class=""></div>
+            <div class="col stats">
+                <h3>Letters Guessed</h3>
+                <div id="guess"></div>
+            </div>
+            <div class="col stats">
+                <h3>Guesses Remaining</h3>
+                <div id="remaining">10</div>
+            </div>
+            <div class="col stats">
+                <h3>Wins: <span id="wins">0</span></h3>
+                <h3>Losses: <span id="losses">0</span></h3>
+            </div>
         </div>
-    </div>
 
-    <script src="assets/javascript/game.js"></script>
+        <script src="assets/javascript/game.js"></script>
 </body>
 
 </html>
