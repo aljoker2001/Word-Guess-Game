@@ -36,12 +36,13 @@ h3 {
 
 img {
     width: 500px;
-    display: none;
+    display: block;
 }
 
 .container {
     width: 100%;
     height: auto;
+    margin-top: 25px;
 }
 
 .row {
