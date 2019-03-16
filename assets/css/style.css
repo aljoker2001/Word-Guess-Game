@@ -8,7 +8,7 @@ header {
     background-color: black;
 }
 
-h1, h2 {
+h1, h2, h5 {
     font-family: 'Eagle Lake', cursive;
     color: white;
     display: flex;

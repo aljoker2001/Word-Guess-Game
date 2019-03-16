@@ -86,16 +86,16 @@ document.onkeyup = function (event) {
             blanks[i] = character[i].toUpperCase();
             word.innerText = blanks.join("");
             win();
-        }
-    }
-
-    for (j = 0; j <= guessLeft; j++) {
-        if (character.indexOf(event.key) === -1 && alphabet.indexOf(event.key) !== -1 && guess.innerText.indexOf(event.key) === -1) {
-            guess.innerText += event.key;
-            guessLeft--;
-            remaining.innerText = guessLeft;
-            if (guessLeft === 0) {
-                lossReset();
+        } else {
+            for (j = 0; j < guessLeft; j++) {
+                if (character.indexOf(event.key) === -1 && alphabet.indexOf(event.key) !== -1 && guess.innerText.indexOf(event.key) === -1) {
+                    guess.innerText += event.key;
+                    guessLeft--;
+                    remaining.innerText = guessLeft;
+                    if (guessLeft === 0) {
+                        lossReset();
+                    }
+                }
             }
         }
     }
