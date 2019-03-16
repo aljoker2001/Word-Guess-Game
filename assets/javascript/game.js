@@ -46,8 +46,8 @@ const lossReset = () => {
     loser.innerHTML = losses;
     loseSound.play();
     guessLeft = 10;
-    remaining.innerHTML = 10;
-    guess.innerHTML = "";
+    remaining.innerText = 10;
+    guess.innerText = "";
     randomWord();
 }
 
