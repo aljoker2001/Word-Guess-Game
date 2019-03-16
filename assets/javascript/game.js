@@ -1,5 +1,4 @@
 var word = document.querySelector(".word");
-var body = document.getElementsByTagName("body");
 var options = [
     { name: "aragorn", image: "assets/images/aragorn.png", sound: "assets/javascript/attention.mp3" },
     { name: "frodo", image: "assets/images/frodo.png", sound: "assets/javascript/endofallthings.mp3" },
@@ -28,8 +27,6 @@ var images = document.getElementById("images");
 var picture = document.createElement("img");
 var hear = document.createElement("audio");
 var blanks = [];
-
-// console.log(characterPosition)
 
 // Selects random word from options array
 const randomWord = () => {
@@ -79,8 +76,8 @@ const win = () => {
 randomWord();
 console.log(blanks);
 
-document.onkeyup = function (event) {
-
+// Adds letters to blank text or guess column
+const game = (event) => {
     for (i = 0; i < character.length; i++) {
         if (event.key === character[i]) {
             blanks[i] = character[i].toUpperCase();
@@ -100,3 +97,6 @@ document.onkeyup = function (event) {
         }
     }
 }
+
+// Adds listener for key press
+document.addEventListener("keypress", game);
